@@ -1,0 +1,19 @@
+server:
+  port: ${PORT:8080}
+spring:
+    data:
+     mongodb:
+        uri: mongodb://localhost:27017/chatty-database
+    hateoas:
+      use-hal-as-default-json-media-type: false
+---
+
+spring:
+  profiles: docker
+  data:
+     mongodb:
+        uri: mongodb://mongodb:27017/chatty-database
+  hateoas:
+    use-hal-as-default-json-media-type: false
+server:
+  port: ${PORT:8080}
