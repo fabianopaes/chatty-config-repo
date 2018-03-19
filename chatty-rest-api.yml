@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8080}
+  port: 8080
 spring:
     data:
      mongodb:
@@ -16,7 +16,7 @@ spring:
   hateoas:
     use-hal-as-default-json-media-type: false
 server:
-  port: ${PORT:8080}
+  port: 8080
 
 eureka:
   client:
