@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8761}
+  port: 8761
 
 eureka:
   instance:
@@ -16,12 +16,16 @@ eureka:
 
 spring:
   profiles: docker
-  application:
-    name: chatty-service-discovery
+
+server:
+   port: 8761
+
 
 eureka:
   instance:
+    preferIpAddress: true
     hostname: chatty-service-discovery
   client:
     serviceUrl:
       defaultZone: http://chatty-service-discovery:8761/eureka/
+      
