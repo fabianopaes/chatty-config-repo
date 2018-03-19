@@ -16,6 +16,8 @@ eureka:
 
 spring:
   profiles: docker
+  application:
+    name: chatty-service-discovery
 
 eureka:
   instance:
