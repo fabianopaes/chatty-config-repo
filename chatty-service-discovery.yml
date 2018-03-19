@@ -23,9 +23,5 @@ eureka:
   instance:
     hostname: chatty-service-discovery
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
       defaultZone: http://chatty-service-discovery:8761/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 0
